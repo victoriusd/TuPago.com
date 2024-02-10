@@ -1,0 +1,174 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuPago.com</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body class=" h-full font-now ">
+
+    <header class="py-3">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full">
+            <nav class=" relative flex justify-between">
+                <div class=" flex justify-center items-center md:gap-y-12">
+                    <a href="">
+                        <img class="w-36" src="./img/Logotipo TUPAGO - SIN FONDO_v-3.png" alt="">
+                    </a>
+                </div>
+                <div class="  flex items-center text-white ">
+                    <div class="  flex justify-center items-center gap-x-5 md:gap-x-7 lg:gap-x-2 text-sm ">
+                        <a class=" ease-in duration-150 hidden md:block lg:border-solid lg:border-2 lg:border-transparent lg:hover:border-sky-500 lg:px-4 lg:py-3 rounded-full "
+                            href="">
+                            Inicio
+                        </a>
+                        <a class=" ease-in duration-150 hidden md:block lg:border-solid lg:border-2 lg:border-transparent lg:hover:border-sky-500 lg:px-4 lg:py-3 rounded-full  "
+                            href="">
+                            Servicios
+                        </a>
+                        <a class=" ease-in duration-150 hidden md:block lg:border-solid lg:border-2 lg:border-transparent lg:hover:border-sky-500 lg:px-4 lg:py-3 rounded-full  "
+                            href="">
+                            Ayuda
+                        </a>
+                        <a class=" ease-in duration-150 hidden md:block lg:border-solid lg:border-2 lg:border-transparent lg:hover:border-sky-500 lg:px-4 lg:py-3 rounded-full  "
+                            href="">
+                            Nosotros
+                        </a>
+                    </div>
+                    <div class=" pl-4 md:pl-8 flex justify-center items-center gap-x-5 md:gap-x-7 text-sm">
+                        <a class="" href="">
+                            <i class="fa-solid fa-lock mr-2" style="color: #2f93e0;"></i>
+                            Iniciar
+                        </a>
+                        <a class=" bg-slate-400 rounded-full py-3 px-5" href="">
+                            Registrarse
+                            <i class="fa-solid fa-user fa-2xs ml-2 py-3 px-2 bg-slate-300 rounded-full "
+                                style="color: #ffffff;"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div
+            class=" text-center lg:grid lg:grid-cols-12 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8  pt-8 lg:text-left lg:pt-14 ">
+
+            <div class="animate__animated animate__fadeInLeft z-10 md:col-end-6 md:col-start-1">
+
+                <h3 class=" text-2xl md:text-3xl  uppercase  font-semibold tracking-widest text-gray-100">
+                    <span>¡La Manera más</span>
+                </h3>
+                <h2 class=" text-white flex flex-col text-5xl md:text-6xl font-bold">
+                    <span>Rápida y Segura </span>
+                    <span>de ayudar en </span>
+                    <span class="text-[#46AAF0]">Venezuela!</span>
+                </h2>
+                <p class=" text-white text-base md:text-lg tracking-tight mt-5 md:pr-12">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi dolorum tenetur culpa ab expedita
+                    dolorem, cupiditate recusandae eveniet autem natus deserunt consectetur sint?
+                </p>
+                <div class="text-white mt-6 flex gap-x-8 justify-center lg:justify-start ">
+                    <a class=" bg-" href=""> Enviar Ahora</a>
+                    <a href=""> Saber Más</a>
+                </div>
+            </div>
+            <div class="hidden lg:block md:col-start-8 md:col-end-12">
+                <div class=" absolute top-32  container mx-auto max-w-md mt-10 p-6 bg-white rounded-lg shadow-md">
+                    <form id="calculatorForm">
+                        <input type="text" id="expression" name="expression"
+                            class="w-full p-2 mb-3 border border-gray-300 rounded-md"
+                            placeholder="Ingresa la expresión matemática" required>
+                        <button type="submit"
+                            class="bg-yellow-300 hover:bg-yellow-400 text-gray-800 font-bold py-2 px-4 rounded">Calcular</button>
+                    </form>
+                    <div class="mt-9">
+                        <label for="result" class="block mb-5">Resultado:</label>
+                        <output id="result" class="w-full p-2 border border-gray-300 rounded-md"></output>
+                    </div>
+                </div>
+            </div>
+            <div
+                class=" bg-gradient-to-r from-[#6f44b7] via-[#3d62bb] to-[#342d7a] absolute h-[45rem] bg-no-repeat -top-60 w-full inset-0 -z-10 opacity-100 lg:h-[55rem] lg:bg-startup">
+            </div>
+            <!--<div class="hidden md:block rounded-full absolute -top-24 left-[35rem] inset-0 bg-cover -z-10 opacity-80" style="background-image: url('https://static.vecteezy.com/system/resources/previews/020/911/482/original/gradient-blur-background-free-png.png');"></div>-->
+        </div>
+
+        <section  class=" mt-16 lg:mt-0 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-12 pt-8 lg:pt-14 ">
+            <h2 class="text-[#7814D7] text-center font-bold text-4xl mb-12">
+                ¿Porque Nosotros?
+            </h2>
+
+            <div data-aos="fade-up" class=" flex flex-col md:flex-row justify-center gap-y-7 gap-x-7 items-center">
+
+                <div  class=" h-72 bg-white rounded-lg shadow-2xl px-4 py-4">
+
+                    <a class="flex justify-center items-center flex-col text-center " href="">
+                        <img class=" rounded-3xl " width="70px" src="" alt="">
+                        <div class=" mt-4 w-56 ">
+                            <h2 class="tracking-tighter mb-2 text-lg font-bold">En 90 Minutos</h2>
+                            <p class=" text-base">
+                                <span>Tus familiares no tienen que esperar horas, días o semanas por esa ayuda que le
+                                    envías.</span>
+                            </p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div  class=" h-72 bg-white rounded-lg shadow-2xl px-4 py-4">
+
+                    <a class="flex justify-center items-center flex-col text-center " href="">
+                        <img class=" rounded-3xl " width="70px" src="" alt="">
+                        <div class=" mt-4 w-56 ">
+                            <h2 class=" tracking-tighter mb-2 text-lg font-bold">No Ansiedad</h2>
+                            <p class=" text-base">
+                                <span>Te mantenemos informado por medio de notificaciones a tu email, y al Whatsapp, hasta que tus familiares reciben el dinero. </span>
+                            </p>
+                        </div>
+                    </a>
+
+                </div>
+                <div  class=" h-72 bg-white rounded-lg shadow-2xl px-4 py-4">
+
+                    <a class="flex justify-center items-center flex-col text-center " href="">
+                        <img class=" rounded-3xl " width="70px" src="" alt="">
+                        <div class=" mt-4 w-56 ">
+                            <h2 class=" tracking-tighter mb-2 text-lg font-bold">No Ansiedad</h2>
+                            <p class=" text-base">
+                                <span>Te mantenemos informado por medio de notificaciones a tu email, y al Whatsapp, hasta que tus familiares reciben el dinero. </span>
+                            </p>
+                        </div>
+                    </a>
+
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <section class="h-full">
+            <h1> Hola</h1>
+
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+        feather.replace();
+    </script>
+</body>
+
+</html>
