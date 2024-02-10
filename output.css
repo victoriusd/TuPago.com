@@ -659,7 +659,7 @@ video {
   top: -6rem;
 }
 
-.-top-60{
+.-top-\[15rem\]{
   top: -15rem;
 }
 
@@ -675,16 +675,20 @@ video {
   top: 8rem;
 }
 
-.-top-6{
-  top: -1.5rem;
+.-top-\[14rem\]{
+  top: -14rem;
 }
 
-.-top-52{
+.-top-\[13rem\]{
   top: -13rem;
 }
 
-.-top-56{
-  top: -14rem;
+.-top-\[12rem\]{
+  top: -12rem;
+}
+
+.-top-\[11rem\]{
+  top: -11rem;
 }
 
 .isolate{
@@ -903,48 +907,12 @@ video {
   height: 18rem;
 }
 
-.h-\[46\.5rem\]{
-  height: 46.5rem;
-}
-
-.h-full{
-  height: 100%;
-}
-
-.h-\[47rem\]{
-  height: 47rem;
-}
-
-.h-\[46\.8rem\]{
-  height: 46.8rem;
-}
-
-.h-\[46\.7rem\]{
-  height: 46.7rem;
-}
-
-.h-\[46\.6rem\]{
-  height: 46.6rem;
-}
-
-.h-\[46\.55rem\]{
-  height: 46.55rem;
-}
-
-.h-\[46\.58rem\]{
-  height: 46.58rem;
-}
-
 .h-\[46rem\]{
   height: 46rem;
 }
 
-.h-\[46\.9rem\]{
-  height: 46.9rem;
-}
-
-.h-\[46\.99rem\]{
-  height: 46.99rem;
+.h-full{
+  height: 100%;
 }
 
 .w-36{
@@ -1986,8 +1954,8 @@ video {
   background-color: rgb(70 170 240 / 0.2);
 }
 
-.bg-\[\#46AAF0\]\/80{
-  background-color: rgb(70 170 240 / 0.8);
+.bg-\[\#46AAF0\]\/50{
+  background-color: rgb(70 170 240 / 0.5);
 }
 
 .bg-\[rgb\(255\2c 0\2c 0\)\]{
@@ -2018,10 +1986,6 @@ video {
 .bg-yellow-300{
   --tw-bg-opacity: 1;
   background-color: rgb(253 224 71 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#46AAF0\]\/50{
-  background-color: rgb(70 170 240 / 0.5);
 }
 
 .bg-opacity-50{
