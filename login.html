@@ -7,20 +7,30 @@
     <link rel="stylesheet" href="./output.css">
 </head>
 
-<body class=" flex justify-center items-center h-screen">
-    <div class="max-w-screen-xl mx-auto bg-white shadow-md overflow-hidden md:flex w-full">
-
-        <!-- bg -->
-        <div class="absolute inset-0 -left-[76rem]">
-            <!-- Coloca la URL de tu imagen en el atributo 'src' -->
-            <img src="./img/startup-2.png" alt="Background Image" class="w-full h-full object-cover">
-        </div>
-
-        <!-- Left Content (Image) -->
+<body class=" overflow-hidden flex justify-center items-center h-screen  w-full bg-gradient-to-r from-[#6f44b7] via-[#3d62bb] to-[#342d7a] ">
+    
+    <div class="max-w-screen-xl mx-auto overflow-hidden flex justify-center w-full">
 
 
         <!-- Right Content (Login Form) -->
-
+        <div class=" md:w-1/2 shadow-md rounded-md bg-white  p-4">
+            <h2 class="text-2xl font-semibold mb-4">Login</h2>
+            <form action="#" method="POST">
+                <div class="mb-4">
+                    <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
+                    <input type="text" id="username" name="username" class="mt-1 p-2 w-full border rounded-md">
+                </div>
+                <div class="mb-6">
+                    <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                    <input type="password" id="password" name="password" class="mt-1 p-2 w-full border rounded-md">
+                </div>
+                <div class="flex items-center justify-between">
+                    <button type="submit"
+                        class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Login</button>
+                    <a href="#" class="text-sm text-blue-500 hover:text-blue-600">Forgot Password?</a>
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 
