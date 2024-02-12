@@ -667,6 +667,10 @@ video {
   inset-inline-end: 0.25rem;
 }
 
+.top-0{
+  top: 0px;
+}
+
 .top-32{
   top: 8rem;
 }
@@ -941,6 +945,22 @@ video {
 
 .h-screen{
   height: 100vh;
+}
+
+.h-\[40rek\]{
+  height: 40rek;
+}
+
+.h-\[40rem\]{
+  height: 40rem;
+}
+
+.h-\[30rem\]{
+  height: 30rem;
+}
+
+.h-\[32rem\]{
+  height: 32rem;
 }
 
 .w-36{
@@ -2032,8 +2052,8 @@ video {
   background-color: rgb(70 170 240 / 0.2);
 }
 
-.bg-\[\#46AAF0\]\/50{
-  background-color: rgb(70 170 240 / 0.5);
+.bg-\[\#46AAF0\]\/70{
+  background-color: rgb(70 170 240 / 0.7);
 }
 
 .bg-\[rgb\(255\2c 0\2c 0\)\]{
@@ -2069,14 +2089,6 @@ video {
 .bg-yellow-300{
   --tw-bg-opacity: 1;
   background-color: rgb(253 224 71 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#46AAF0\]\/70{
-  background-color: rgb(70 170 240 / 0.7);
-}
-
-.bg-opacity-50{
-  --tw-bg-opacity: 0.5;
 }
 
 .bg-opacity-100{
@@ -2278,6 +2290,10 @@ video {
 
 .pl-4{
   padding-left: 1rem;
+}
+
+.pt-20{
+  padding-top: 5rem;
 }
 
 .pt-6{
@@ -2998,14 +3014,6 @@ video {
 }
 
 @media (min-width: 768px){
-  .md\:-left-1{
-    left: -0.25rem;
-  }
-
-  .md\:-top-\[17rem\]{
-    top: -17rem;
-  }
-
   .md\:col-start-1{
     grid-column-start: 1;
   }
@@ -3022,6 +3030,10 @@ video {
     grid-column-end: 6;
   }
 
+  .md\:mt-12{
+    margin-top: 3rem;
+  }
+
   .md\:block{
     display: block;
   }
@@ -3034,12 +3046,8 @@ video {
     display: grid;
   }
 
-  .md\:hidden{
-    display: none;
-  }
-
-  .md\:h-auto{
-    height: auto;
+  .md\:h-\[38rem\]{
+    height: 38rem;
   }
 
   .md\:w-1\/2{
@@ -3056,6 +3064,10 @@ video {
 
   .md\:flex-row{
     flex-direction: row;
+  }
+
+  .md\:justify-center{
+    justify-content: center;
   }
 
   .md\:gap-x-4{
@@ -3085,8 +3097,8 @@ video {
     line-height: 2.25rem;
   }
 
-  .md\:text-6xl{
-    font-size: 3.75rem;
+  .md\:text-5xl{
+    font-size: 3rem;
     line-height: 1;
   }
 
@@ -3094,15 +3106,19 @@ video {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
-
-  .md\:leading-tight{
-    line-height: 1.25;
-  }
 }
 
 @media (min-width: 1024px){
+  .lg\:-left-1{
+    left: -0.25rem;
+  }
+
   .lg\:-top-60{
     top: -15rem;
+  }
+
+  .lg\:-top-\[17rem\]{
+    top: -17rem;
   }
 
   .lg\:mt-0{
@@ -3117,12 +3133,24 @@ video {
     display: block;
   }
 
+  .lg\:flex{
+    display: flex;
+  }
+
   .lg\:grid{
     display: grid;
   }
 
+  .lg\:hidden{
+    display: none;
+  }
+
   .lg\:h-\[55rem\]{
     height: 55rem;
+  }
+
+  .lg\:h-auto{
+    height: auto;
   }
 
   .lg\:grid-cols-12{
