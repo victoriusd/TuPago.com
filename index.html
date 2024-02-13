@@ -1,12 +1,13 @@
 <html lang="en">
 <!--https://flowbite.com/docs/components/carousel/-->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TuPago.com</title>
     <link rel="stylesheet" href="./output.css">
 
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,7 +19,7 @@
 
 <body class=" relative bg-gray-200 h-full font-now scroll-smooth ">
 
-    <header class=" fixed top-0 py-3 z-10 w-full">
+    <header class=" bg-black/60 backdrop-blur-md fixed top-0 py-3 z-20 w-full">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full">
             <nav class=" relative flex justify-between">
                 <div class=" flex justify-center items-center md:gap-y-12">
@@ -37,11 +38,7 @@
                             Servicios
                         </a>
                         <a class=" ease-in duration-150 hidden md:block lg:border-solid lg:border-2 lg:border-transparent lg:hover:border-sky-500 lg:px-4 lg:py-3 rounded-full  "
-                            href="">
-                            Ayuda
-                        </a>
-                        <a class=" ease-in duration-150 hidden md:block lg:border-solid lg:border-2 lg:border-transparent lg:hover:border-sky-500 lg:px-4 lg:py-3 rounded-full  "
-                            href="">
+                            href="#nosotros">
                             Nosotros
                         </a>
                     </div>
@@ -52,7 +49,8 @@
                             </div>
                             Iniciar
                         </a>
-                        <a class=" flex items-center justify-center bg-slate-400 rounded-full py-3 px-5" href="./register.html">
+                        <a class=" flex items-center justify-center bg-slate-400 rounded-full py-3 px-5"
+                            href="./register.html">
                             Registrarse
                             <div class="hidden md:block">
                                 <i class=" fa-solid fa-user fa-2xs ml-2 py-3 px-2 bg-slate-300 rounded-full "
@@ -73,7 +71,7 @@
 
             <div class="animate__animated animate__fadeInLeft z-10 md:col-end-6 md:col-start-1">
 
-                <h3 class=" text-2xl md:text-3xl  uppercase  font-semibold tracking-widest text-gray-100">
+                <h3 class="text-2xl md:text-3xl  uppercase  font-semibold tracking-widest text-gray-100">
                     <span>¡La Manera más</span>
                 </h3>
                 <h2 class=" text-white flex flex-col text-5xl md:text-5xl font-bold">
@@ -84,8 +82,9 @@
                 <p class=" text-white text-base md:text-lg  mt-5 md:pr-12  ">
                     Nuestro compromiso es brindarte un servicio confiable y eficiente que te permita enviar ayuda
                     económica a tus familiares en Venezuela de manera fácil y sin complicaciones. Con nosotros, puedes
-                    tener la tranquilidad de que tus remesas llegarán a destino de manera segura y <span class="lg:flex" >en tiempo récord.</span>
-                    
+                    tener la tranquilidad de que tus remesas llegarán a destino de manera segura y <span
+                        class="lg:flex">en tiempo récord.</span>
+
                 </p>
                 <div class="text-white mt-3 flex gap-x-8 justify-center lg:justify-start">
                     <a class="flex items-center gap-x-2 backdrop-blur-lg bg-[#46AAF0]/70  bg-opacity-100 rounded-3xl outline outline-slate-100 outline-[0.5px] py-3 px-7  "
@@ -98,7 +97,7 @@
                         </div>
                     </a>
                     <a class=" flex items-center gap-x-2 backdrop-blur-lg bg-[#46AAF0]/70  outline outline-[0.5px] rounded-3xl py-3 px-7"
-                        href="">
+                        href="#nosotros">
                         Saber Más
                         <div class="hidden md:block ">
                             <i class="fa-solid fa-magnifying-glass px-2 py-3 backdrop-blur-lg bg-[#46AAF0]/20 rounded-full fa-xs"
@@ -107,25 +106,41 @@
                     </a>
                 </div>
             </div>
-            <div class="hidden lg:block md:col-start-8 md:col-end-12">
-                <div class=" absolute top-32  container mx-auto max-w-md mt-10 p-6 bg-white rounded-lg shadow-md">
+            <div class="animate__animated animate__fadeInRight hidden lg:block md:col-start-8 md:col-end-12">
+                <div class="  container mx-auto max-w-md mt-10 p-6 bg-white rounded-lg shadow-md">
+                    <h2 class=" text-center text-[#46AAF0] underline text-3xl font-semibold mb-5">¡Calcula tu Cambio!
+                    </h2>
                     <form id="calculatorForm">
+                        <div class="mb-4 flex gap-x-5 ">
+                            <span>De:</span>
+                            <select id="cambio">
+                                <option value="Bss">Clp</option>
+                                <option value="saab">Bss</option>
+                                <option value="opel">Usd</option>
+                            </select>
+                        </div>
                         <input type="text" id="expression" name="expression"
                             class="w-full p-2 mb-3 border border-gray-300 rounded-md"
-                            placeholder="Ingresa la expresión matemática" required>
-                        <button type="submit"
-                            class="bg-yellow-300 hover:bg-yellow-400 text-gray-800 font-bold py-2 px-4 rounded">Calcular</button>
+                            placeholder="Ingresa la cantidad a enviar" required>
+                        <div class="mb-4 mt-2 flex gap-x-2 ">
+                            <span>A:</span>
+                            <select id="cambio">
+                                <option value="volvo">Bss</option>
+                                <option value="saab">Clp</option>
+                                <option value="opel">Usd</option>
+                            </select>
+                        </div>
+                        <input type="text" id="expression" name="expression"
+                            class="w-full p-2 mb-3 border border-gray-300 rounded-md"
+                            placeholder="Ingresa la cantidad a recibir" required>
+
                     </form>
-                    <div class="mt-9">
-                        <label for="result" class="block mb-5">Resultado:</label>
-                        <output id="result" class="w-full p-2 border border-gray-300 rounded-md"></output>
-                    </div>
                 </div>
             </div>
             <!--<div
                 class=" bg-gradient-to-r from-[#6f44b7] via-[#3d62bb] to-[#342d7a] absolute h-[46rem] bg-no-repeat -top-[11rem] lg:-top-60 w-full inset-0 -z-10 opacity-100 lg:h-[55rem] lg:bg-startup">
             </div> -->
-            <div class=" absolute inset-0 h-[35rem] md:h-[38rem] lg:h-auto -left-4 lg:-left-1 lg:-top-[17rem] -z-10 ">
+            <div class=" absolute inset-0 h-[32rem] md:h-[38rem] lg:h-auto -left-4 lg:-left-1 lg:-top-[17rem] -z-10 ">
                 <div class=" hidden lg:block w-full h-full bg-cover bg-no-repeat "
                     style="background-image: url('./img/startup-1.png');"></div>
                 <div
@@ -143,7 +158,7 @@
             <div data-aos="fade-up"
                 class=" flex flex-col justify-center items-center md:grid md:grid-cols-3 px-0 gap-y-12 h-auto w-full">
 
-                
+
                 <!--Card 1-->
                 <div
                     class="  relative  transition-transform ease-in-out duration-700 hover:-translate-y-4  flex drop-shadow-2xl h-64 bg-white rounded-3xl w-96 ">
@@ -330,12 +345,61 @@
             </div>
         </section>
 
-        <section id="nosotros" class="mt-9 lg:mt-2 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-6 pt-8 lg:pt-14">
-            
+        <section id="nosotros" class="mt-4 lg:mt-2 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-6 pt-8 lg:pt-10">
+
+            <h2 data-aos="fade-up" class=" text-center text-5xl font-bold mb-12 text-[#46AAF0]">
+                ¿Por que TuPago?
+            </h2>
+
+            <div data-aos="fade-up" class="grid lg:lg:grid-cols-2 h-auto gap-x-8 mb-16 w-full lg:p-0 lg:rounded-none bg-white rounded-lg p-5 shadow-2xl lg:bg-transparent lg:shadow-none lg:rounded-none">
+                <div class="w-full">
+                    <h3 class=" text-[#7814d7] text-center mb-8 text-4xl font-medium">¡Te simplificamos la Vida!</h3>
+                    <p class=" text-center text-lg ">
+                        Envía todas tus remesas familiares, sin complicaciones, desde cualquier parte del mundo, desde
+                        la
+                        comodidad de tu teléfono y sintiendo la satisfacción de que tus familiares recibirán tu ayuda en
+                        el menor tiempo posible.
+                    </p>
+                </div>
+                <div class="w-full">
+                    <img class="hidden lg:block rounded-3xl" width="600px" height="100px"
+                        src="https://www.eude.es/wp-content/uploads/2018/05/Dise%C3%B1o-sin-t%C3%ADtulo-2021-05-11T165120.480.png"
+                        alt="">
+                </div>
+
+            </div>
+
+            <div data-aos="fade-up" class="grid lg:grid-cols-2 h-auto gap-x-8 mb-16 lg:p-0 lg:rounded-none bg-white rounded-lg p-5 shadow-2xl lg:bg-transparent lg:shadow-none lg:rounded-none">
+                <div class="w-full">
+                    <img class="hidden lg:block rounded-3xl" width="600px" height="100px"
+                        src="https://www.iebschool.com/blog/wp-content/uploads/2015/06/pexels-fauxels-3183197.jpg"
+                        alt="">
+                </div>
+                <div class="w-full">
+                    <h3 class=" text-[#7814d7] text-center mb-8 text-4xl font-medium">¡Poder acortar esa distancia!</h3>
+                    <p class=" text-center text-lg ">Ser un puente entre los Venezolanos que viven en el extranjero y
+                        sus familiares
+                        y amigos que aún viven en Venezuela.</p>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" class="grid lg:grid-cols-2 h-auto gap-x-8 lg:p-0 lg:rounded-none bg-white rounded-lg p-5 shadow-2xl lg:bg-transparent lg:shadow-none lg:rounded-none">
+                <div class="w-full">
+                    <h3 class=" text-[#7814d7] text-center mb-8 text-4xl font-medium">¡Es ayudarte a, Ayudar!</h3>
+                    <p class=" text-center text-lg ">Es por eso que nos esforzamos para que tus remesas familiares
+                        lleguen en el
+                        menor tiempo posible, porque como Venezolanos que somos conocemos de primera mano las
+                        necesidades que viven nuestros familiares en Venezuela.</p>
+                </div>
+                <div class="w-full">
+                    <img class="hidden lg:block rounded-3xl" width="600px" height="100px"
+                        src="https://www.decoraoficina.es/wp-content/uploads/2022/11/trabajar-en-equipo.jpeg" alt="">
+                </div>
+            </div>
         </section>
 
-        <section data-aos="fade-up" class=" mt-9 lg:mt-0 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-6 pt-8 lg:pt-14 ">
-            <h2 class="text-[#46AAF0] text-center font-bold text-4xl md:text-5xl mb-12">
+        <section data-aos="fade-up" class="lg:mt-0 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-6 pt-8 lg:pt-14 ">
+            <h2 class="text-[#384294] text-center font-bold text-4xl md:text-5xl mb-12">
                 ¿Porque Nosotros?
             </h2>
 
@@ -345,9 +409,12 @@
                 <div class=" h-72 bg-white rounded-lg shadow-2xl px-4 py-4">
 
                     <div class="flex justify-center items-center flex-col text-center " href="">
-                        <img class=" rounded-3xl " width="70px" src="" alt="">
+                        <lord-icon src="https://cdn.lordicon.com/mwikjdwh.json" target="div" trigger="hover"
+                            colors="primary:#46AAF0" style="width:70px;height:70px">
+                        </lord-icon>
                         <div class=" mt-4 w-56 ">
-                            <h2 class="tracking-tighter mb-2 text-[#46AAF0] text-lg font-bold">En 90 Minutos</h2>
+                            <h2 class="tracking-tighter mb-2 text-[#7814D7] text-center text-lg font-bold">En 90 Minutos
+                            </h2>
                             <p class=" text-base">
                                 <span>Tus familiares no tienen que esperar horas, días o semanas por esa ayuda que le
                                     envías.</span>
@@ -360,9 +427,11 @@
                 <div class=" h-72 bg-white rounded-lg shadow-2xl px-4 py-4">
 
                     <div class="flex justify-center items-center flex-col text-center " href="">
-                        <img class=" rounded-3xl " width="70px" src="" alt="">
+                        <lord-icon src="https://cdn.lordicon.com/ercyvufy.json" target="div" trigger="hover" colors="primary:#46AAF0"
+                            style="width:70px;height:70px">
+                        </lord-icon>
                         <div class=" mt-4 w-56 ">
-                            <h2 class=" tracking-tighter mb-2 text-[#46AAF0] text-lg font-bold">No Ansiedad</h2>
+                            <h2 class=" tracking-tighter mb-2 text-[#7814D7] text-lg font-bold">No Ansiedad</h2>
                             <p class=" text-base">
                                 <span>Te mantenemos informado por medio de notificaciones a tu email, y al Whatsapp,
                                     hasta que tus familiares reciben el dinero. </span>
@@ -374,12 +443,14 @@
                 <div class=" h-72 bg-white rounded-lg shadow-2xl px-4 py-4">
 
                     <div class="flex justify-center items-center flex-col text-center " href="">
-                        <img class=" rounded-3xl " width="70px" src="" alt="">
+                        <lord-icon src="https://cdn.lordicon.com/nqtddedc.json" target="div" trigger="hover"
+                            state="hover-cross-3" colors="primary:#46AAF0" style="width:70px;height:70px">
+                        </lord-icon>
                         <div class=" mt-4 w-56 ">
-                            <h2 class=" tracking-tighter mb-2 text-[#46AAF0] text-lg font-bold">No Ansiedad</h2>
+                            <h2 class=" tracking-tighter mb-2 text-[#7814D7] text-lg font-bold">Seguridad</h2>
                             <p class=" text-base">
-                                <span>Te mantenemos informado por medio de notificaciones a tu email, y al Whatsapp,
-                                    hasta que tus familiares reciben el dinero. </span>
+                                <span>No jugamos con la necesidad de tus familiares
+                                    . </span>
                             </p>
                         </div>
                     </div>
@@ -387,11 +458,11 @@
             </div>
         </section>
 
-        
+
 
     </main>
 
-    <footer class="w-full mx-auto mt-12  text-gray-300 bg-gradient-to-r from-[#6f44b7] via-[#3d62bb] to-[#342d7a]">
+    <footer class="w-full mx-auto mt-12 rounded-t-3xl text-gray-500 backdrop-blur-md bg-white">
         <div
             class="flex gap-x-20 lg:gap-x-44 justify-between mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-6 pt-9 lg:pt-16  ">
 
@@ -418,10 +489,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="">Ayuda</a>
-                        </li>
-                        <li>
-                            <a href="">Nosotros</a>
+                            <a href="#nosotros">Nosotros</a>
                         </li>
                     </ol>
                 </div>
@@ -447,13 +515,13 @@
         </div>
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-10 ">
             <div class=" border-t-2 border-gray-400 mt-3 flex gap-x-4 justify-center pt-6 lg:pt-7 items-center ">
-                <a class=" w-9 rounded-full" href="">
+                <a class=" w-9 rounded-full" target="_blank" href="https://www.facebook.com/ESTUPAGO?mibextid=PlNXYD">
                     <img width="" src="./img/facebook-svgrepo-com.svg" alt="">
                 </a>
-                <a class=" w-9 rounded-full" href="">
+                <a class=" w-9 rounded-full" target="_blank" href="https://www.instagram.com/estupago?igsh=emZmcmZ6OGRsbWUy">
                     <img width="" src="./img/instagram-svgrepo-com.svg" alt="">
                 </a>
-                <a class=" w-7 rounded-full" href="">
+                <a class=" w-7 rounded-full" target="_blank" href="https://x.com/estupago?s=11&t=wvtmueQVQCfrgJUjI6CwUw">
                     <img width="" src="./img/twitter-svgrepo-com.svg" alt="">
                 </a>
             </div>
