@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TuPago.com</title>
+    
     <!-- Salida Tailwind -->
     <link rel="stylesheet" href="./output.css">
 
@@ -112,35 +113,39 @@
                     </a>
                 </div>
             </div>
+
             <div class="animate__animated animate__fadeInRight hidden lg:block md:col-start-8 md:col-end-12">
                 <div class="  container mx-auto max-w-md mt-10 p-6 bg-white rounded-lg shadow-md">
                     <h2 class=" text-center text-[#46AAF0] underline text-3xl font-semibold mb-5">¡Calcula tu Cambio!
                     </h2>
-                    <form id="calculatorForm">
+                    <div id="calculatorForm">
                         <div class="mb-4 flex gap-x-5 ">
                             <span>De:</span>
-                            <select id="cambio">
-                                <option value="Bss">Clp</option>
-                                <option value="saab">Bss</option>
-                                <option value="opel">Usd</option>
+                            <select id="cambInput">
+                                <option value="clp">Clp</option>
+                                <option value="bss">Bss</option>
+                                <option value="usd">Usd</option>
                             </select>
                         </div>
-                        <input type="text" id="expression" name="expression"
+                        <input type="number" id="calInput" name="expression"
                             class="w-full p-2 mb-3 border border-gray-300 rounded-md"
                             placeholder="Ingresa la cantidad a enviar" required>
                         <div class="mb-4 mt-2 flex gap-x-2 ">
                             <span>A:</span>
-                            <select id="cambio">
-                                <option value="volvo">Bss</option>
-                                <option value="saab">Clp</option>
-                                <option value="opel">Usd</option>
+                            <select id="cambOutput">
+                                <option value="bss">Bss</option>
+                                <option value="clp">Clp</option>
+                                <option value="usd">Usd</option>
                             </select>
                         </div>
-                        <input type="text" id="expression" name="expression"
+                        <input type="number" id="calOutput" name="expression"
                             class="w-full p-2 mb-3 border border-gray-300 rounded-md"
-                            placeholder="Ingresa la cantidad a recibir" required>
-
-                    </form>
+                            placeholder="Ingresa la cantidad a recibir" disabled>
+                        <div class="flex justify-center mt-2 gap-x-5">
+                            <button id="calBtn" >Calcular</button>
+                            <button id="sendBtn">Enviar</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!--<div
@@ -543,12 +548,15 @@
         </div>
     </footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <script>
-        AOS.init();
-        feather.replace();
-    </script>
 </body>
 
+<script src="./tupago.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+    feather.replace();
+</script>
 </html>
